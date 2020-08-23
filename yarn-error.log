@@ -1,0 +1,52 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js client
+
+PATH: 
+  C:\Users\mikew\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\usr\bin;C:\Program Files\ConEmu\ConEmu\Scripts;C:\Program Files\ConEmu;C:\Program Files\ConEmu\ConEmu;C:\Python27;C:\Python27\Scripts;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\ProgramData\chocolatey\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\PuTTY;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn;C:\Program Files\dotnet;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Android\tools\bin\platform-tools;C:\Program Files (x86)\Yarn\bin;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn;C:\Program Files\Microsoft SQL Server\150\Tools\Binn;C:\Program Files\Microsoft SQL Server\150\DTS\Binn;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn;C:\Program Files\Microsoft SQL Server\140\Tools\Binn;C:\Program Files\Microsoft SQL Server\140\DTS\Binn;C:\Users\mikew\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\LINQPad6;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files (x86)\Elm\0.19.1\bin;C:\Users\mikew\AppData\Local\Microsoft\WindowsApps;C:\Users\mikew\.dotnet\tools;C:\Program Files\MongoDB\Server\4.2\bin;C:\Users\mikew\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\Users\mikew\AppData\Local\Microsoft\WindowsApps;C:\Android\tools\bin\platform-tools;E:\ProgramFile\Azure Data Studio\bin;C:\Users\mikew\AppData\Local\Yarn\bin;C:\Users\mikew\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\mikew\AppData\Local\Android\Sdk\platform-tools;C:\Users\mikew\AppData\Local\Programs\Azure Data Studio\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.0
+
+Node version: 
+  11.12.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: C:\dev\aimlab\package.json: Unexpected token / in JSON at position 173
+      at JSON.parse (<anonymous>)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Program Files (x86)\Yarn\lib\cli.js:310:30)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "aimlab",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+      "description": "",
+      "scripts": {
+        "server": "npx nodemon server.js",
+        // "client": "elm-live src/Main.elm --hot --start-page=./dev/index.html -- --output=main.js --debug",
+        "client": "elm-live src/Main.elm --hot -- --output=main.js --debug",
+        "css": "sass --watch ./public/css/index.scss ./public/css/style.css",
+        "make": "elm make src/Main.elm --output=./public/js/main.js"
+      },
+      "keywords": [],
+      "author": "",
+      "dependencies": {
+        "express": "^4.17.1",
+        "node-static": "^0.7.11",
+        "socket.io": "^2.3.0"
+      }
+    
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

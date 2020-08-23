@@ -1,0 +1,19 @@
+{
+  "name": "aimlab",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+    "description": "",
+    "scripts": {
+      "server": "npx nodemon server.js",
+      "client": "elm-live src/Main.elm  -- --debug",
+      "client2": "elm-live src/Main.elm --hot --start-page=./dev/index.html -- --output=main.js --debug",
+      "css": "sass --watch ./public/css/index.scss ./public/css/style.css",
+      "make": "elm make src/Main.elm --output=./public/js/main.js"
+    },
+    "keywords": [],
+    "author": "",
+    "dependencies": {
+    }
+  
+}
